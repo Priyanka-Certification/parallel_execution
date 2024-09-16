@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Suite">
+
+	<test name="Chrome Test">
+		<!-- <parameter name="browser" value="chrome"/> -->
+		<parameter name="browserName" value="Chrome"></parameter>
+		<parameter name="browserVersion" value="119.0"></parameter>
+		<parameter name="osVersion" value="Windows 11"></parameter>
+
+		<classes>
+			<class
+				name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari" />
+		</classes>
+	</test>
+
+	<test name="SafariTest">
+		<parameter name="browserName" value="Safari"></parameter>
+		<parameter name="browserVersion" value="13"></parameter>
+		<parameter name="osVersion" value="macOS Catalina"></parameter>
+
+		<classes>
+			<class
+				name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari" />
+		</classes>
+	</test> <!--
+	Test -->
+
+</suite> <!--
+Suite -->

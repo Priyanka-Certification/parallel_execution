@@ -1,0 +1,31 @@
+# .gitpod.yml
+
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Run Tests
+    command: >
+      mvn clean install &&
+      mvn test
+
+ports:
+  - port: 4444
+    onOpen: ignore
+
+# Prebuild to speed up workspace startup by building Maven dependencies before opening the workspace
+github:
+  prebuilds:
+    enabled: true
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
+
+# LambdaTest setup - no local browsers needed
+init:
+  - sudo apt-get update && sudo apt-get install -y unzip xvfb
+
+# Xvfb setup for headless execution
+before:
+  - Xvfb :99 -ac & export DISPLAY=:99
