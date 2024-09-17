@@ -8,9 +8,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,13 +20,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class ChromeAndSafari {
+public class ChromeAndFirefox {
 	WebDriver driver = null;
 
 	String browserName, browserVersion, osVersion;
 
 	@Parameters({ "browserName", "browserVersion", "osVersion" })
-	// @Test
 	@BeforeMethod
 	public void setUp(String browserName, String browserVersion, String osVersion) throws Exception {
 		this.browserName = browserName;
@@ -34,8 +33,8 @@ public class ChromeAndSafari {
 		this.osVersion = osVersion;
 
 		HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-		ltOptions.put("username", "priyanka081708");
-		ltOptions.put("accessKey", "snBTQSOe4gjw4G0bkY93uUV0ZrPLXPJwav09fDYSeQBMgLL20I");
+		ltOptions.put("username", "priyameya1718");
+		ltOptions.put("accessKey", "7LOBIGkbwc8As5vOe69LB9uz5FxC42W4CtSq8P0uExvXsRKq6P");
 		ltOptions.put("visual", true);
 		ltOptions.put("video", true);
 		ltOptions.put("network", true);
@@ -55,31 +54,30 @@ public class ChromeAndSafari {
 			browserOptions.setCapability("LT:Options", ltOptions);
 
 			driver = new RemoteWebDriver(new URL("https://hub.lambdatest.com/wd/hub"), browserOptions);
-
 		}
 
-		else if (browserName.equalsIgnoreCase("Safari")) {
+		else if (browserName.equalsIgnoreCase("Firefox")) {
 
-			SafariOptions browserOptions = new SafariOptions();
+			FirefoxOptions browserOptions = new FirefoxOptions();
+
 			browserOptions.setPlatformName(osVersion);
-			browserOptions.setBrowserVersion(browserVersion);
-			browserOptions.setCapability("LT:Options", ltOptions);
-			driver = new RemoteWebDriver(new URL("https://hub.lambdatest.com/wd/hub"), browserOptions);
 
+			browserOptions.setBrowserVersion(browserVersion);
+
+			browserOptions.setCapability("LT:Options", ltOptions);
+
+			driver = new RemoteWebDriver(new URL("https://hub.lambdatest.com/wd/hub"), browserOptions);
 		}
-		clearCookies(driver);
 	}
 
 	public void acceptCookies(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		try {
-			// Wait for the cookie consent pop-up to appear and click "Allow all"
-			// WebElement allowAllButton=wait()
+
 			WebElement allowAllButton = wait.until(
 					ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Allow all')]")));
 			allowAllButton.click();
 
-			// Continue with other test steps after accepting cookies
 			System.out.println("Cookies accepted successfully!");
 
 		} catch (Exception e) {
@@ -88,20 +86,15 @@ public class ChromeAndSafari {
 		}
 	}
 
-	public void clearCookies(WebDriver driver) {
-		try {
-			driver.manage().deleteAllCookies();
-			System.out.println("All cookies have been cleared.");
-		} catch (Exception e) {
-			System.out.println("Error while clearing cookies: " + e.getMessage());
-		}
-	}
-
 	@Test
 	public void testScenario1() throws Exception {
 
 		// Open Selenium Playground
 		driver.get("https://www.lambdatest.com/selenium-playground");
+
+		if (osVersion.equals("macOS Sonoma")) {
+			acceptCookies(driver);
+		}
 
 		// Click on "Simple Form Demo"
 		driver.findElement(By.linkText("Simple Form Demo")).click();
@@ -130,6 +123,10 @@ public class ChromeAndSafari {
 
 		// Open Selenium Playground
 		driver.get("https://www.lambdatest.com/selenium-playground");
+		if (osVersion.equals("macOS Sonoma")) {
+
+			acceptCookies(driver);
+		}
 
 		// Click on "Drag & Drop Sliders"
 		driver.findElement(By.linkText("Drag & Drop Sliders")).click();
@@ -152,12 +149,15 @@ public class ChromeAndSafari {
 		// Open Selenium Playground
 		driver.get("https://www.lambdatest.com/selenium-playground");
 
+		driver.get("https://www.lambdatest.com/selenium-playground");
+		if (osVersion.equals("macOS Sonoma")) {
+			acceptCookies(driver);
+		}
+
 		// Click on "Input Form Submit"
 		driver.findElement(By.linkText("Input Form Submit")).click();
 
 		Thread.sleep(3000);
-
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		// Click "Submit" without filling any form
 		driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
@@ -166,18 +166,17 @@ public class ChromeAndSafari {
 		Thread.sleep(3000);
 		// Validate the error message
 		String message = nameField.getAttribute("validationMessage");
-		System.out.println(message);
-		// Assert.assertTrue(message.contains("Please fill out this field."), "Error
-		// message validation failed!");
+
 		Thread.sleep(3000);
 		Assert.assertTrue(message.contains("Please fill out this field.") || message.contains("Fill out this field."),
 				"Error message validation failed! The message was: " + message);
-		Thread.sleep(3000);
+		// Thread.sleep(3000);
 		// Fill in the form fields
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("name")));
-		driver.findElement(By.id("name")).sendKeys("Kumari Priyanka");
+
+		nameField.sendKeys("Kumari Priyanka");
+		// driver.findElement(By.id("name")).sendKeys("Kumari Priyanka");
 		Thread.sleep(1000);
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("inputEmail4")));
+
 		driver.findElement(By.id("inputEmail4")).sendKeys("priyanka@test.com");
 		Thread.sleep(1000);
 		driver.findElement(By.id("inputPassword4")).sendKeys("password123");
@@ -189,7 +188,7 @@ public class ChromeAndSafari {
 
 		// Select Country "United States"
 		Select countryDropdown = new Select(driver.findElement(By.name("country")));
-		countryDropdown.selectByVisibleText("India");
+		countryDropdown.selectByVisibleText("United States");
 		Thread.sleep(1000);
 
 		// Fill other fields and submit

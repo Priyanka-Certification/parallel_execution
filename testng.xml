@@ -7,21 +7,20 @@
 		<parameter name="browserName" value="Chrome"></parameter>
 		<parameter name="browserVersion" value="119.0"></parameter>
 		<parameter name="osVersion" value="Windows 11"></parameter>
-
 		<classes>
 			<class
-				name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari" />
+				name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox" />
 		</classes>
 	</test>
 
-	<test name="SafariTest">
-		<parameter name="browserName" value="Safari"></parameter>
-		<parameter name="browserVersion" value="13"></parameter>
-		<parameter name="osVersion" value="macOS Catalina"></parameter>
-
+	<test name="Firefox Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browserName" value="Firefox"></parameter>
+		<parameter name="browserVersion" value="129.0"></parameter>
+		<parameter name="osVersion" value="macOS Sonoma"></parameter>
 		<classes>
 			<class
-				name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari" />
+				name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox" />
 		</classes>
 	</test> <!--
 	Test -->

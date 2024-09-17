@@ -1,227 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-16T18:22:54 IST" name="Suite" finished-at="2024-09-16T18:24:51 IST" duration-ms="117433">
+  <suite started-at="2024-09-17T20:02:10 IST" name="Suite" finished-at="2024-09-17T20:04:21 IST" duration-ms="130716">
     <groups>
     </groups>
-    <test started-at="2024-09-16T18:22:54 IST" name="SafariTest" finished-at="2024-09-16T18:24:24 IST" duration-ms="89603">
-      <class name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:22:54 IST" name="setUp" finished-at="2024-09-16T18:23:06 IST" duration-ms="12085" status="PASS">
+    <test started-at="2024-09-17T20:02:10 IST" name="Chrome Test" finished-at="2024-09-17T20:04:07 IST" duration-ms="117264">
+      <class name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:02:10 IST" name="setUp" finished-at="2024-09-17T20:02:22 IST" duration-ms="12172" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Safari]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[13]]>
+                <![CDATA[119.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[macOS Catalina]]>
+                <![CDATA[Windows 11]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testScenario1()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:23:06 IST" name="testScenario1" finished-at="2024-09-16T18:23:24 IST" duration-ms="17588" status="PASS">
+        <test-method signature="testScenario1()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:02:22 IST" name="testScenario1" finished-at="2024-09-17T20:02:42 IST" duration-ms="20426" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenario1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:23:24 IST" name="tearDown" finished-at="2024-09-16T18:23:24 IST" duration-ms="205" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:02:42 IST" name="tearDown" finished-at="2024-09-17T20:02:43 IST" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:23:24 IST" name="setUp" finished-at="2024-09-16T18:23:42 IST" duration-ms="18087" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:02:43 IST" name="setUp" finished-at="2024-09-17T20:02:57 IST" duration-ms="14119" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Safari]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[13]]>
+                <![CDATA[119.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[macOS Catalina]]>
+                <![CDATA[Windows 11]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testScenario2()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:23:42 IST" name="testScenario2" finished-at="2024-09-16T18:23:49 IST" duration-ms="7473" status="PASS">
+        <test-method signature="testScenario2()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:02:57 IST" name="testScenario2" finished-at="2024-09-17T20:03:09 IST" duration-ms="11401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenario2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:23:49 IST" name="tearDown" finished-at="2024-09-16T18:23:50 IST" duration-ms="304" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:03:09 IST" name="tearDown" finished-at="2024-09-17T20:03:09 IST" duration-ms="680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:23:50 IST" name="setUp" finished-at="2024-09-16T18:24:09 IST" duration-ms="19457" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:03:09 IST" name="setUp" finished-at="2024-09-17T20:03:27 IST" duration-ms="18072" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Safari]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[13]]>
+                <![CDATA[119.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[macOS Catalina]]>
+                <![CDATA[Windows 11]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testScenario3()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:24:09 IST" name="testScenario3" finished-at="2024-09-16T18:24:23 IST" duration-ms="14149" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Error message validation failed! The message was: Fill out this field expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Error message validation failed! The message was: Fill out this field expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari.testScenario3(ChromeAndSafari.java:173)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testScenario3()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:03:27 IST" name="testScenario3" finished-at="2024-09-17T20:04:06 IST" duration-ms="39013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testScenario3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@72e5a8e]" started-at="2024-09-16T18:24:23 IST" name="tearDown" finished-at="2024-09-16T18:24:24 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@4d465b11]" started-at="2024-09-17T20:04:06 IST" name="tearDown" finished-at="2024-09-17T20:04:07 IST" duration-ms="695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari -->
-    </test> <!-- SafariTest -->
-    <test started-at="2024-09-16T18:22:54 IST" name="Chrome Test" finished-at="2024-09-16T18:24:51 IST" duration-ms="117433">
-      <class name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:22:54 IST" name="setUp" finished-at="2024-09-16T18:23:06 IST" duration-ms="11883" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[119.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Windows 11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testScenario1()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:23:06 IST" name="testScenario1" finished-at="2024-09-16T18:23:29 IST" duration-ms="23261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScenario1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:23:29 IST" name="tearDown" finished-at="2024-09-16T18:23:30 IST" duration-ms="429" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:23:30 IST" name="setUp" finished-at="2024-09-16T18:23:43 IST" duration-ms="13427" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[119.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Windows 11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testScenario2()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:23:43 IST" name="testScenario2" finished-at="2024-09-16T18:23:56 IST" duration-ms="13145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScenario2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:23:56 IST" name="tearDown" finished-at="2024-09-16T18:23:57 IST" duration-ms="768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:23:57 IST" name="setUp" finished-at="2024-09-16T18:24:09 IST" duration-ms="12204" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[119.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Windows 11]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testScenario3()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:24:09 IST" name="testScenario3" finished-at="2024-09-16T18:24:51 IST" duration-ms="41616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScenario3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari@53fdffa1]" started-at="2024-09-16T18:24:51 IST" name="tearDown" finished-at="2024-09-16T18:24:51 IST" duration-ms="654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- lambdaTestAssignment_Final.ParallelExecution.ChromeAndSafari -->
+      </class> <!-- lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox -->
     </test> <!-- Chrome Test -->
+    <test started-at="2024-09-17T20:02:10 IST" name="Firefox Test" finished-at="2024-09-17T20:04:21 IST" duration-ms="130716">
+      <class name="lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:02:10 IST" name="setUp" finished-at="2024-09-17T20:02:16 IST" duration-ms="6631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[129.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sonoma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testScenario1()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:02:16 IST" name="testScenario1" finished-at="2024-09-17T20:02:36 IST" duration-ms="19959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:02:36 IST" name="tearDown" finished-at="2024-09-17T20:02:37 IST" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:02:37 IST" name="setUp" finished-at="2024-09-17T20:02:55 IST" duration-ms="18361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[129.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sonoma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testScenario2()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:02:55 IST" name="testScenario2" finished-at="2024-09-17T20:03:07 IST" duration-ms="11485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:03:07 IST" name="tearDown" finished-at="2024-09-17T20:03:08 IST" duration-ms="880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:03:08 IST" name="setUp" finished-at="2024-09-17T20:03:26 IST" duration-ms="18234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[129.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sonoma]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testScenario3()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:03:26 IST" name="testScenario3" finished-at="2024-09-17T20:04:19 IST" duration-ms="53342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox@7d4f9aae]" started-at="2024-09-17T20:04:19 IST" name="tearDown" finished-at="2024-09-17T20:04:21 IST" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- lambdaTestAssignment_Final.ParallelExecution.ChromeAndFirefox -->
+    </test> <!-- Firefox Test -->
   </suite> <!-- Suite -->
 </testng-results>
